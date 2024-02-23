@@ -1,0 +1,20 @@
+spring:
+  security:
+    user:
+      password: pass
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tinyads
+    username: postgres
+    password: postgres
+
+#  devtools:
+#    restart:
+#      additional-paths: build/classes/kotlin/.reload
+#      trigger-file: .reloadtrigger
+  port: 8080
+  context-path: /
+---
+logging:
+  level.root: INFO
+  level.com.rnds.tinyads: INFO
+#  level.org.springframework.boot.devtools: DEBUG

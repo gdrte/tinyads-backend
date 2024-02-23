@@ -1,0 +1,16 @@
+dgs:
+  graphql:
+    virtualthreads:
+      enabled: true
+
+spring:
+  threads:
+    virtual:
+      enabled: true
+  profiles:
+    active: dev
+graphql:
+  packages:
+    - "com.rnds.tinyads.queries"
+    - "com.rnds.tinyads.mutations"
+    - "com.rnds.tinyads.subscriptions"

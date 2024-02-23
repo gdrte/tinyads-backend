@@ -1,0 +1,24 @@
+type AdPost {
+  id: ID!
+  text: String!
+  user: User!
+}
+
+type User {
+  id: ID!
+  name: String!
+}
+
+type Query {
+  ads: [AdPost!]!
+}
+
+input NewAdPost {
+  text: String!
+  userId: String!
+}
+
+type Mutation {
+  createAdPost(input: NewAdPost!): AdPost!
+  deleteAdPost(userId: String!):AdPost!
+}
